@@ -1,7 +1,5 @@
 <?php 
-	if (is_front_page()) {
-		$nombre_seccion = 'homepage';
-	} elseif (is_page('nosotros')) {
+	if (is_page('nosotros')) {
 		$nombre_seccion = 'nosotros';
 	} elseif (is_page('servicios')) {
 		$nombre_seccion = 'servicios';
@@ -33,12 +31,12 @@
 			<img src="<?php echo $image[0]; ?>" alt="Logotipo Diblabla">
 		</a>
 	</div>
-	<div id="slider-intro" class="slider fullscreen">
+	<div class="slider fullscreen">
 	    <ul class="slides">
 	      <?php
 			$post_args = array(
 				'post_type' => 'dbb-home-video',
-				'posts_per_page' => 1,
+				'posts_per_page' => -1,
 				'tax_query' => array(
 					array(
 						'taxonomy' => 'seccion',
@@ -55,21 +53,19 @@
 			?>
 				<li>
 					<?php if( $vlink != "" ) : ?>
-						<div class="portada-text-intro wow fadeInUp" data-wow-delay="0.2s">
+						<div class="portada-text-intro">
 							<h2><?php the_title(); ?></h2>
 							<p><?php the_content();?></p>
 						</div>
-						<video id="headerVideo" src="<?php echo $vlink; ?>" muted autoplay></video>
-                        <div id="portada-video" style="background-image: url(<?php the_post_thumbnail_url('full'); ?>)"></div>
-                        <div class="controls-video">
-                        	<a class="waves-effect waves-light btn btn-plus hide" id="controls-play"><i class="material-icons icon-large">play_arrow</i></a>
-                        	<a class="waves-effect waves-light btn btn-plus" id="controls-stop"><i class="material-icons icon-large">stop</i></a>
-                        	<a class="waves-effect waves-light btn btn-plus" id="unmuteButton"><i class="material-icons">notifications_active</i></a>
-                        	<a class="waves-effect waves-light btn btn-plus hide" id="muteButton"><i class="material-icons">notifications_off</i></a>
-                        </div>
+						<video class="header-video" src="<?php echo $vlink; ?>" autoplay loop></video>
+						<!-- <video class="header-video" src="<?php echo $vlink; ?>" autoplay loop>
+                          <source src="<?php echo $vlink; ?>" type="video/mp4">
+                          <source src="<?php echo $vlink; ?>" type="video/ogg">
+                           Your browser does not support the video tag.
+                        </video> -->
 			       	<?php else : ?>
 			       		<div class="home-slider-opacity">
-			       			<div class="portada-text-intro wow fadeInUp" data-wow-delay="0.2s">
+			       			<div class="portada-text-intro">
 								<h2><?php the_title(); ?></h2>
 								<p><?php the_content();?></p>
 							</div>

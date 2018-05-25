@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<?php get_template_part( 'template/template-portada' ); ?>
+<?php get_template_part( 'template/template-portada-home' ); ?>
 
 <!--Opcion "Qué hacemos 3" - slider multimagen-->
 <section id="hacemos-3">
