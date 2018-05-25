@@ -35,24 +35,29 @@ var $=jQuery.noConflict();
 			$(".button-collapse").sideNav();
 
 			// Video intro
-			var promise = document.querySelector('video').play();
-			if (promise !== undefined) {
-				promise.then(_ => {
-					// Autoplay started!
-					$('#logo-diblabla').addClass('hide');
-					$('#portada-video').addClass('opacity-0').removeClass('opacity-1');
-				}).catch(error => {
-					// Autoplay was prevented.
+			if ($("#homeVideo")[0]){
+				var promise = document.querySelector('video').play();
+				if (promise !== undefined) {
+					promise.then(_ => {
+						// Autoplay started!
+						$('#logo-diblabla').addClass('hide');
+						$('#portada-video').addClass('opacity-0').removeClass('opacity-1');
+					}).catch(error => {
+						// Autoplay was prevented.
+						$('#controls-play').removeClass('hide').addClass('block');
+						$('#controls-stop').removeClass('block').addClass('hide');
+					});
+				}	
+				//Al terminar el video
+				$('#homeVideo').on('ended',function(){
+					$('#portada-video').addClass('opacity-1').removeClass('opacity-0');
 					$('#controls-play').removeClass('hide').addClass('block');
-					$('#controls-stop').removeClass('block').addClass('hide');
-				});
+					$('#controls-stop, #logo-diblabla').removeClass('block').addClass('hide');
+				});							
+			} else {
+				console.log('No hay video');
 			}
-
-			$('#homeVideo').on('ended',function(){
-				$('#portada-video').addClass('opacity-1').removeClass('opacity-0');
-				$('#controls-play').removeClass('hide').addClass('block');
-				$('#controls-stop, #logo-diblabla').removeClass('block').addClass('hide');
-			});
+			
    		});
 
 		/*$(window).on('resize', function(){
@@ -72,30 +77,32 @@ var $=jQuery.noConflict();
 		});
 
 		// Reproducción y Audio video intro
-		$('#controls-play').on('click', function(e){
-			$('#controls-play, #logo-diblabla').removeClass('block').addClass('hide');
-			$('#controls-stop').removeClass('hide').addClass('block');
-			document.getElementById('homeVideo').play();
-			$('#portada-video').addClass('opacity-0').removeClass('opacity-1');
-		});
-		$('#controls-stop').on('click', function(e){
-			$('#controls-stop').removeClass('block').addClass('hide');
-			$('#controls-play, #logo-diblabla').removeClass('hide').addClass('block');
-			document.getElementById('homeVideo').pause();
-			document.getElementById('homeVideo').currentTime = 0;
-			$('#portada-video').addClass('opacity-1').removeClass('opacity-0');
-		});
-		// Audio video intro
-		$('#muteButton').on('click', function(e){
-			$('#muteButton').removeClass('block').addClass('hide');
-			$('#unmuteButton').removeClass('hide').addClass('block');
-			$('video').prop('muted', true);
-		});
-		unmuteButton.addEventListener('click', function() {
-			$('#unmuteButton').removeClass('block').addClass('hide');
-			$('#muteButton').removeClass('hide').addClass('block');
-			homeVideo.muted = false;
-		});
+		if ($("#homeVideo")[0]){
+			$('#controls-play').on('click', function(e){
+				$('#controls-play, #logo-diblabla').removeClass('block').addClass('hide');
+				$('#controls-stop').removeClass('hide').addClass('block');
+				document.getElementById('homeVideo').play();
+				$('#portada-video').addClass('opacity-0').removeClass('opacity-1');
+			});
+			$('#controls-stop').on('click', function(e){
+				$('#controls-stop').removeClass('block').addClass('hide');
+				$('#controls-play, #logo-diblabla').removeClass('hide').addClass('block');
+				document.getElementById('homeVideo').pause();
+				document.getElementById('homeVideo').currentTime = 0;
+				$('#portada-video').addClass('opacity-1').removeClass('opacity-0');
+			});
+			// Audio video intro
+			$('#muteButton').on('click', function(e){
+				$('#muteButton').removeClass('block').addClass('hide');
+				$('#unmuteButton').removeClass('hide').addClass('block');
+				$('video').prop('muted', true);
+			});
+			unmuteButton.addEventListener('click', function() {
+				$('#unmuteButton').removeClass('block').addClass('hide');
+				$('#muteButton').removeClass('hide').addClass('block');
+				homeVideo.muted = false;
+			});
+		}
 
 		$(document).on('change', '#nf-field-58-0', function() {
 			console.log('Checkbox change');

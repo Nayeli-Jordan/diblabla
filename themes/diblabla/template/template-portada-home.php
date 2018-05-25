@@ -29,13 +29,15 @@
 		?>
 			<?php if( $vlink != "" ) : ?>
 				<video id="homeVideo" src="<?php echo $vlink; ?>" muted autoplay></video>
-	            <div id="portada-video" style="background-image: url(<?php the_post_thumbnail_url('full'); ?>)"></div>
+	        	<img id="portada-video" class="responsive-img" src="<?php the_post_thumbnail_url('full'); ?>" alt="portada home">
 	            <div class="controls-video">
 	            	<a class="waves-effect waves-light btn btn-plus hide" id="controls-play"><i class="material-icons icon-large">play_arrow</i></a>
 	            	<a class="waves-effect waves-light btn btn-plus" id="controls-stop"><i class="material-icons icon-large">stop</i></a>
 	            	<a class="waves-effect waves-light btn btn-plus" id="unmuteButton"><i class="material-icons">notifications_active</i></a>
 	            	<a class="waves-effect waves-light btn btn-plus hide" id="muteButton"><i class="material-icons">notifications_off</i></a>
 	            </div>
+	        <?php else: ?>
+	        	<img src="<?php the_post_thumbnail_url('full'); ?>" class="responsive-img" alt="portada home">
 	       	<?php endif; ?>
 	<?php endwhile; wp_reset_postdata(); endif; ?>
 </section>

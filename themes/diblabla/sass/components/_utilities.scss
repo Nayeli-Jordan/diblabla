@@ -2216,11 +2216,7 @@ div.panel {
 		position: absolute;
 	    top: 0px; bottom: 0px;
 	    left: 0px; right: 0px;
-	    background-position: center top;
-	    //background-position: center bottom;
-	    //background-size: cover;
-	    background-size: cover;
-	    background-repeat: no-repeat;
+		margin: auto;
 	    &.opacity-1 {
 	    	-webkit-transition: opacity 1s ease-in-out;
 	        -moz-transition: opacity 1s ease-in-out;
