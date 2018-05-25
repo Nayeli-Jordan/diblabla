@@ -34,18 +34,12 @@ var $=jQuery.noConflict();
 			jsAccordion();
 			$(".button-collapse").sideNav();
 
-		
-
-  unmuteButton.addEventListener('click', function() {
-    homeVideo.muted = false;
-  });
-
 			// Video intro
 			var promise = document.querySelector('video').play();
 			if (promise !== undefined) {
 				promise.then(_ => {
 					// Autoplay started!
-					$('#logo-diblabla').css('display', 'none');
+					$('#logo-diblabla').addClass('hide');
 					$('#portada-video').addClass('opacity-0').removeClass('opacity-1');
 				}).catch(error => {
 					// Autoplay was prevented.
@@ -55,10 +49,9 @@ var $=jQuery.noConflict();
 			}
 
 			$('#homeVideo').on('ended',function(){
-				$('#logo-diblabla').css('display', 'block');
 				$('#portada-video').addClass('opacity-1').removeClass('opacity-0');
 				$('#controls-play').removeClass('hide').addClass('block');
-				$('#controls-stop').removeClass('block').addClass('hide');
+				$('#controls-stop, #logo-diblabla').removeClass('block').addClass('hide');
 			});
    		});
 
@@ -80,18 +73,16 @@ var $=jQuery.noConflict();
 
 		// Reproducción y Audio video intro
 		$('#controls-play').on('click', function(e){
-			$('#controls-play').removeClass('block').addClass('hide');
+			$('#controls-play, #logo-diblabla').removeClass('block').addClass('hide');
 			$('#controls-stop').removeClass('hide').addClass('block');
 			document.getElementById('homeVideo').play();
-			$('#logo-diblabla').css('display', 'none');			
 			$('#portada-video').addClass('opacity-0').removeClass('opacity-1');
 		});
 		$('#controls-stop').on('click', function(e){
 			$('#controls-stop').removeClass('block').addClass('hide');
-			$('#controls-play').removeClass('hide').addClass('block');
+			$('#controls-play, #logo-diblabla').removeClass('hide').addClass('block');
 			document.getElementById('homeVideo').pause();
 			document.getElementById('homeVideo').currentTime = 0;
-			$('#logo-diblabla').css('display', 'block');
 			$('#portada-video').addClass('opacity-1').removeClass('opacity-0');
 		});
 		// Audio video intro
@@ -100,10 +91,10 @@ var $=jQuery.noConflict();
 			$('#unmuteButton').removeClass('hide').addClass('block');
 			$('video').prop('muted', true);
 		});
-		$('#unmuteButton').on('click', function(e){
+		unmuteButton.addEventListener('click', function() {
 			$('#unmuteButton').removeClass('block').addClass('hide');
 			$('#muteButton').removeClass('hide').addClass('block');
-			$('video').prop('muted', false);
+			homeVideo.muted = false;
 		});
 
 		$(document).on('change', '#nf-field-58-0', function() {
