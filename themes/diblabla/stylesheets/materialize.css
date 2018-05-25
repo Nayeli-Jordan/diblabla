@@ -12998,18 +12998,28 @@ div.panel {
   }
 }
 /* line 2208, ../sass/components/_utilities.scss */
-#portada-video {
+#container-video {
+  position: relative;
+  text-align: center;
+}
+/* line 2211, ../sass/components/_utilities.scss */
+#container-video video {
+  max-height: 100vh;
+  max-width: 100%;
+}
+/* line 2215, ../sass/components/_utilities.scss */
+#container-video #portada-video {
   position: absolute;
   top: 0px;
   bottom: 0px;
   left: 0px;
   right: 0px;
-  background-position: center bottom;
+  background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* line 2215, ../sass/components/_utilities.scss */
-#portada-video.opacity-1 {
+/* line 2224, ../sass/components/_utilities.scss */
+#container-video #portada-video.opacity-1 {
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -ms-transition: opacity 1s ease-in-out;

@@ -37,7 +37,7 @@ var $=jQuery.noConflict();
 		
 
   unmuteButton.addEventListener('click', function() {
-    headerVideo.muted = false;
+    homeVideo.muted = false;
   });
 
 			// Video intro
@@ -54,7 +54,7 @@ var $=jQuery.noConflict();
 				});
 			}
 
-			$('#headerVideo').on('ended',function(){
+			$('#homeVideo').on('ended',function(){
 				$('#logo-diblabla').css('display', 'block');
 				$('#portada-video').addClass('opacity-1').removeClass('opacity-0');
 				$('#controls-play').removeClass('hide').addClass('block');
@@ -82,15 +82,15 @@ var $=jQuery.noConflict();
 		$('#controls-play').on('click', function(e){
 			$('#controls-play').removeClass('block').addClass('hide');
 			$('#controls-stop').removeClass('hide').addClass('block');
-			document.getElementById('headerVideo').play();
+			document.getElementById('homeVideo').play();
 			$('#logo-diblabla').css('display', 'none');			
 			$('#portada-video').addClass('opacity-0').removeClass('opacity-1');
 		});
 		$('#controls-stop').on('click', function(e){
 			$('#controls-stop').removeClass('block').addClass('hide');
 			$('#controls-play').removeClass('hide').addClass('block');
-			document.getElementById('headerVideo').pause();
-			document.getElementById('headerVideo').currentTime = 0;
+			document.getElementById('homeVideo').pause();
+			document.getElementById('homeVideo').currentTime = 0;
 			$('#logo-diblabla').css('display', 'block');
 			$('#portada-video').addClass('opacity-1').removeClass('opacity-0');
 		});
