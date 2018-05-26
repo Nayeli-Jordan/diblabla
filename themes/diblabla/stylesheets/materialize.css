@@ -13014,9 +13014,11 @@ div.panel {
   bottom: 0px;
   left: 0px;
   right: 0px;
-  margin: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-/* line 2220, ../sass/components/_utilities.scss */
+/* line 2222, ../sass/components/_utilities.scss */
 #container-video #portada-video.opacity-1 {
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
