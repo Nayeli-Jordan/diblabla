@@ -18,7 +18,7 @@
 			 foreach( $terms as $term ) {
 			 // Print the name method from $term which is an OBJECT
 
-			 echo '<div class="col s6 wow zoomIn" data-wow-delay="0.2s">
+			 echo '<div id="' . $term->slug . '" class="col s6 wow zoomIn" data-wow-delay="0.2s">
 			 <div class="subservicio-block" style="background-image: url(' . THEMEPATH . '/images/subservicios/' . $term->slug . '.jpg)">
 			 <p class="valign-wrapper">' . $term->name . '</p>
 			 </div>

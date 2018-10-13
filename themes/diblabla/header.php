@@ -103,25 +103,54 @@
 			      <li><a href="<?php echo site_url('/nosotros'); ?>" class="btn-floating black">Nosotros</a></li>
 			    </ul>
 			</div>
-			
-      <div class="fixed-action-btn  ico-menu-3 horizontal">
+
+      <div id="item-servicios" class="ico-menu-3 horizontal">
           <a href="<?php echo site_url('/servicios'); ?>" class="btn-floating btn-large black">
             <div class="photo-menu-icon ico-3"></div>
           </a>
           <ul>
-            <li>
-              <div>
-                <a href="<?php echo site_url('/servicios'); ?>" class="btn-floating black menu-servicios-drop" id="servicios-dropdown">Servicios</a>
-                <span class="dropdown-button" data-activates="dropdown1"></span>
-              </div>
-              <ul id="dropdown1" class="dropdown-content">
-                <li><a href="<?php echo site_url('/nuestros-servicios/cobertura-de-eventos'); ?>">Cobertura de eventos</a></li>
-                <li><a href="<?php echo site_url('/nuestros-servicios/identidad-corporativa'); ?>">Identidad corporativa</a></li>
-                <li><a href="<?php echo site_url('/nuestros-servicios/desarrollo-de-contenidos-digitales'); ?>">Desarrollo de contenidos digitales</a></li>
-                <li><a href="<?php echo site_url('/nuestros-servicios/comunicacion-de-marca'); ?>">Comunicación de marca</a></li>
-              </ul>
-            </li>
-        
+            <li><a href="<?php echo site_url('/servicios'); ?>" class="btn-floating black">Servicios</a></li>
+            <ul id="sub-servicios">
+              <li>
+                <a href="<?php echo site_url('/nuestros-servicios/cobertura-de-eventos'); ?>">Cobertura de eventos</a>
+                <ul class="sub-servicio-items">
+                  <li><a href="<?php echo site_url('/nuestros-servicios/cobertura-de-eventos'); ?>#eventos-empresariales">Eventos empresariales</a></li>
+                  <li><a href="<?php echo site_url('/nuestros-servicios/cobertura-de-eventos'); ?>#eventos-culturales">Eventos culturales</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="<?php echo site_url('/nuestros-servicios/identidad-corporativa'); ?>">Identidad corporativa</a>
+                <ul class="sub-servicio-items">
+                    <li><a href="<?php echo site_url('/nuestros-servicios/identidad-corporativa'); ?>#">Credencialización</a></li>
+                    <li><a href="<?php echo site_url('/nuestros-servicios/identidad-corporativa'); ?>#">Fotografía y video de instalaciones</a></li>
+                    <li><a href="<?php echo site_url('/nuestros-servicios/identidad-corporativa'); ?>#">Logotipo y manual de identidad</a></li>
+                    <li><a href="<?php echo site_url('/nuestros-servicios/identidad-corporativa'); ?>#">Papelería institucional</a></li>
+                    <li><a href="<?php echo site_url('/nuestros-servicios/identidad-corporativa'); ?>#">Video de capacitación</a></li>
+                    <li><a href="<?php echo site_url('/nuestros-servicios/identidad-corporativa'); ?>#">Video institucional</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="<?php echo site_url('/nuestros-servicios/desarrollo-de-contenidos-digitales'); ?>">Desarrollo de contenidos digitales</a>
+                <ul class="sub-servicio-items">
+                  <li><a href="<?php echo site_url('/nuestros-servicios/desarrollo-de-contenidos-digitales'); ?>#">Fotografía de producto</a></li>
+                  <li><a href="<?php echo site_url('/nuestros-servicios/desarrollo-de-contenidos-digitales'); ?>#">Making of publicitario</a></li>
+                  <li><a href="<?php echo site_url('/nuestros-servicios/desarrollo-de-contenidos-digitales'); ?>#">Spots publicitarios</a></li>
+                  <li><a href="<?php echo site_url('/nuestros-servicios/desarrollo-de-contenidos-digitales'); ?>#">Video catálogos</a></li>
+                  <li><a href="<?php echo site_url('/nuestros-servicios/desarrollo-de-contenidos-digitales'); ?>#">Video infografías</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="<?php echo site_url('/nuestros-servicios/comunicacion-de-marca'); ?>">Comunicación de marca</a>
+                <ul class="sub-servicio-items">
+                  <li><a href="<?php echo site_url('/nuestros-servicios/comunicacion-de-marca'); ?>#">Asesoría y capacitación para manejo de RRSS</a></li>
+                  <li><a href="<?php echo site_url('/nuestros-servicios/comunicacion-de-marca'); ?>#">Campañas de marketing digital</a></li>
+                  <li><a href="<?php echo site_url('/nuestros-servicios/comunicacion-de-marca'); ?>#">Campañas de publicidad BTL</a></li>
+                  <li><a href="<?php echo site_url('/nuestros-servicios/comunicacion-de-marca'); ?>#">Creación de páginas web</a></li>
+                  <li><a href="<?php echo site_url('/nuestros-servicios/comunicacion-de-marca'); ?>#">Manejo de RRSS</a></li>
+                  <li><a href="<?php echo site_url('/nuestros-servicios/comunicacion-de-marca'); ?>#">Optimiza tu inversión</a></li>
+                </ul>
+              </li>
+            </ul>
           </ul>
       </div>
 			<div class="fixed-action-btn  ico-menu-4 horizontal">
@@ -162,10 +191,36 @@
           <li><a class="waves-effect" href="<?php echo site_url('/nosotros'); ?>">Nosotros</a></li>
           <li><a class="waves-effect" href="<?php echo site_url('/servicios'); ?>">Servicios</a></li>
             <ul id="dropdown2">
-              <li><a href="<?php echo site_url('/nuestros-servicios/cobertura-de-eventos'); ?>">Cobertura de eventos</a></li>
-              <li><a href="<?php echo site_url('/nuestros-servicios/identidad-corporativa'); ?>">Identidad corporativa</a></li>
-              <li><a href="<?php echo site_url('/nuestros-servicios/desarrollo-de-contenidos-digitales'); ?>">Desarrollo de contenidos digitales</a></li>
-              <li><a href="<?php echo site_url('/nuestros-servicios/comunicacion-de-marca'); ?>">Comunicación de marca</a></li>
+              <li>
+                <a href="<?php echo site_url('/nuestros-servicios/cobertura-de-eventos'); ?>">Cobertura de eventos</a>
+                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/cobertura-de-eventos'); ?>#eventos-empresariales">Eventos empresariales</a>
+                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/cobertura-de-eventos'); ?>#eventos-culturales">Eventos culturales</a>
+              <li>
+                <a href="<?php echo site_url('/nuestros-servicios/identidad-corporativa'); ?>">Identidad corporativa</a>
+                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/identidad-corporativa'); ?>#credencializacion">Credencialización</a>
+                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/identidad-corporativa'); ?>#fotografia-y-video-de-instalaciones">Fotografía y video de instalaciones</a>
+                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/identidad-corporativa'); ?>#logotipo-y-manual-de-identidad">Logotipo y manual de identidad</a>
+                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/identidad-corporativa'); ?>#papeleria-institucional">Papelería institucional</a>
+                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/identidad-corporativa'); ?>#video-de-capacitacion">Video de capacitación</a>
+                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/identidad-corporativa'); ?>#video-institucional">Video institucional</a>
+              </li>
+              <li>
+                <a href="<?php echo site_url('/nuestros-servicios/desarrollo-de-contenidos-digitales'); ?>">Desarrollo de contenidos digitales</a>
+                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/desarrollo-de-contenidos-digitales'); ?>#fotografia-de-producto">Fotografía de producto</a>
+                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/desarrollo-de-contenidos-digitales'); ?>#making-of-publicitario">Making of publicitario</a>
+                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/desarrollo-de-contenidos-digitales'); ?>#spots-publicitarios">Spots publicitarios</a>
+                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/desarrollo-de-contenidos-digitales'); ?>#video-catalogos">Video catálogos</a>
+                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/desarrollo-de-contenidos-digitales'); ?>#video-infografias">Video infografías</a>
+              </li>
+              <li>
+                <a href="<?php echo site_url('/nuestros-servicios/comunicacion-de-marca'); ?>">Comunicación de marca</a>
+                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/comunicacion-de-marca'); ?>#asesoria-y-capacitacion-para-manejo-de-rrss">Asesoría y capacitación para manejo de RRSS</a>
+                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/comunicacion-de-marca'); ?>#campanas-de-marketing-digital">Campañas de marketing digital</a>
+                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/comunicacion-de-marca'); ?>#campanas-de-publicidad-btl">Campañas de publicidad BTL</a>
+                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/comunicacion-de-marca'); ?>#creacion-de-paginas-web">Creación de páginas web</a>
+                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/comunicacion-de-marca'); ?>#manejo-de-rrss">Manejo de RRSS</a>
+                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/comunicacion-de-marca'); ?>#optimiza-tu-inversion">Optimiza tu inversión</a>
+              </li>
             </ul>
           <li><a class="waves-effect" href="<?php echo site_url('/proyectos'); ?>">Proyectos</a></li>
           <li><a class="waves-effect" href="<?php echo site_url('/cotiza'); ?>">Crea tu proyecto</a></li>
