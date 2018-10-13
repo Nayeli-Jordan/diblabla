@@ -121,33 +121,33 @@
               <li>
                 <a href="<?php echo site_url('/nuestros-servicios/identidad-corporativa'); ?>">Identidad corporativa</a>
                 <ul class="sub-servicio-items">
-                    <li><a href="<?php echo site_url('/nuestros-servicios/identidad-corporativa'); ?>#">Credencialización</a></li>
-                    <li><a href="<?php echo site_url('/nuestros-servicios/identidad-corporativa'); ?>#">Fotografía y video de instalaciones</a></li>
-                    <li><a href="<?php echo site_url('/nuestros-servicios/identidad-corporativa'); ?>#">Logotipo y manual de identidad</a></li>
-                    <li><a href="<?php echo site_url('/nuestros-servicios/identidad-corporativa'); ?>#">Papelería institucional</a></li>
-                    <li><a href="<?php echo site_url('/nuestros-servicios/identidad-corporativa'); ?>#">Video de capacitación</a></li>
-                    <li><a href="<?php echo site_url('/nuestros-servicios/identidad-corporativa'); ?>#">Video institucional</a></li>
+                  <li><a class="sub-item" href="<?php echo site_url('/nuestros-servicios/identidad-corporativa'); ?>#credencializacion">Credencialización</a></li>
+                  <li><a class="sub-item" href="<?php echo site_url('/nuestros-servicios/identidad-corporativa'); ?>#fotografia-y-video-de-instalaciones">Fotografía y video de instalaciones</a></li>
+                  <li><a class="sub-item" href="<?php echo site_url('/nuestros-servicios/identidad-corporativa'); ?>#logotipo-y-manual-de-identidad">Logotipo y manual de identidad</a></li>
+                  <li><a class="sub-item" href="<?php echo site_url('/nuestros-servicios/identidad-corporativa'); ?>#papeleria-institucional">Papelería institucional</a></li>
+                  <li><a class="sub-item" href="<?php echo site_url('/nuestros-servicios/identidad-corporativa'); ?>#video-de-capacitacion">Video de capacitación</a></li>
+                  <li><a class="sub-item" href="<?php echo site_url('/nuestros-servicios/identidad-corporativa'); ?>#video-institucional">Video institucional</a></li>
                 </ul>
               </li>
               <li>
                 <a href="<?php echo site_url('/nuestros-servicios/desarrollo-de-contenidos-digitales'); ?>">Desarrollo de contenidos digitales</a>
                 <ul class="sub-servicio-items">
-                  <li><a href="<?php echo site_url('/nuestros-servicios/desarrollo-de-contenidos-digitales'); ?>#">Fotografía de producto</a></li>
-                  <li><a href="<?php echo site_url('/nuestros-servicios/desarrollo-de-contenidos-digitales'); ?>#">Making of publicitario</a></li>
-                  <li><a href="<?php echo site_url('/nuestros-servicios/desarrollo-de-contenidos-digitales'); ?>#">Spots publicitarios</a></li>
-                  <li><a href="<?php echo site_url('/nuestros-servicios/desarrollo-de-contenidos-digitales'); ?>#">Video catálogos</a></li>
-                  <li><a href="<?php echo site_url('/nuestros-servicios/desarrollo-de-contenidos-digitales'); ?>#">Video infografías</a></li>
+                  <li><a class="sub-item" href="<?php echo site_url('/nuestros-servicios/desarrollo-de-contenidos-digitales'); ?>#fotografia-de-producto">Fotografía de producto</a></li>
+                  <li><a class="sub-item" href="<?php echo site_url('/nuestros-servicios/desarrollo-de-contenidos-digitales'); ?>#making-of-publicitario">Making of publicitario</a></li>
+                  <li><a class="sub-item" href="<?php echo site_url('/nuestros-servicios/desarrollo-de-contenidos-digitales'); ?>#spots-publicitarios">Spots publicitarios</a></li>
+                  <li><a class="sub-item" href="<?php echo site_url('/nuestros-servicios/desarrollo-de-contenidos-digitales'); ?>#video-catalogos">Video catálogos</a></li>
+                  <li><a class="sub-item" href="<?php echo site_url('/nuestros-servicios/desarrollo-de-contenidos-digitales'); ?>#video-infografias">Video infografías</a></li>
                 </ul>
               </li>
               <li>
                 <a href="<?php echo site_url('/nuestros-servicios/comunicacion-de-marca'); ?>">Comunicación de marca</a>
                 <ul class="sub-servicio-items">
-                  <li><a href="<?php echo site_url('/nuestros-servicios/comunicacion-de-marca'); ?>#">Asesoría y capacitación para manejo de RRSS</a></li>
-                  <li><a href="<?php echo site_url('/nuestros-servicios/comunicacion-de-marca'); ?>#">Campañas de marketing digital</a></li>
-                  <li><a href="<?php echo site_url('/nuestros-servicios/comunicacion-de-marca'); ?>#">Campañas de publicidad BTL</a></li>
-                  <li><a href="<?php echo site_url('/nuestros-servicios/comunicacion-de-marca'); ?>#">Creación de páginas web</a></li>
-                  <li><a href="<?php echo site_url('/nuestros-servicios/comunicacion-de-marca'); ?>#">Manejo de RRSS</a></li>
-                  <li><a href="<?php echo site_url('/nuestros-servicios/comunicacion-de-marca'); ?>#">Optimiza tu inversión</a></li>
+                  <li><a class="sub-item" href="<?php echo site_url('/nuestros-servicios/comunicacion-de-marca'); ?>#asesoria-y-capacitacion-para-manejo-de-rrss">Asesoría y capacitación para manejo de RRSS</a></li>
+                  <li><a class="sub-item" href="<?php echo site_url('/nuestros-servicios/comunicacion-de-marca'); ?>#campanas-de-marketing-digital">Campañas de marketing digital</a></li>
+                  <li><a class="sub-item" href="<?php echo site_url('/nuestros-servicios/comunicacion-de-marca'); ?>#campanas-de-publicidad-btl">Campañas de publicidad BTL</a></li>
+                  <li><a class="sub-item" href="<?php echo site_url('/nuestros-servicios/comunicacion-de-marca'); ?>#creacion-de-paginas-web">Creación de páginas web</a></li>
+                  <li><a class="sub-item" href="<?php echo site_url('/nuestros-servicios/comunicacion-de-marca'); ?>#manejo-de-rrss">Manejo de RRSS</a></li>
+                  <li><a class="sub-item" href="<?php echo site_url('/nuestros-servicios/comunicacion-de-marca'); ?>#optimiza-tu-inversion">Optimiza tu inversión</a></li>
                 </ul>
               </li>
             </ul>
