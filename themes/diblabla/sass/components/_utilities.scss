@@ -99,6 +99,13 @@ nav ul li a.btn-floating{
 	width: 160px;
 	text-align: center;
 }
+
+
+.menu-sub-servicio p{
+	color: white!important;
+	padding-left: 20px;
+}
+
 .logo-initial{
 	height: 70px;
     display: block;
@@ -325,6 +332,12 @@ video.proyecto-video{
     margin: 0 25%;
     text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
 }
+
+#container-logo-encabezado-2 img{
+	max-height: 150px;
+	width: auto!important;
+}
+
 /*Videos*/
 //Eliminar opción descargar video
 video::-internal-media-controls-download-button {
@@ -339,6 +352,10 @@ video::-webkit-media-controls-panel {
     width: calc(100% + 30px); /* Adjust as needed */
 }
 /*Qué hacemos*/
+.text-special-big{
+	font-size: 20px;
+}
+
 .hacemos-photos, .hacemos-text{
 	position: relative;
     min-height: 300px!important;
@@ -383,13 +400,18 @@ video::-webkit-media-controls-panel {
 
 }
 .cotiza-text > div{
-	padding: 1px 1px 20px;
+	padding: 1px 10px 20px;
     background: white;
     width: 300px;
     margin: auto;
+    text-align: center;
+    font-size: 14px;
 }
 #formulario-cotizacion input[type="checkbox"]{
 	display: none!important;
+}
+.block-servicio-title-1 label, .block-servicio-title-2 label, .block-servicio-title-3 label, .block-servicio-title-4 label{
+	font-weight: 700;
 }
 /*Desarrolla tu proyecto*/
 
@@ -564,9 +586,13 @@ p.link-little{
 }
 .modal.full-window .modal-container img{
 	margin: 0;
-	/*max-height: 300px;*/
 	width: 100%;
 }
+.modal.full-window .modal-container .grid-gallery img{
+	max-height: 200px;
+	height: auto!important;
+}
+
 .modal.full-window .modal-container .col{
 	padding: 0 50px!important;
 }
@@ -720,6 +746,9 @@ a.link-vermas p,
 .contacto-social-link i{
 	font-size: 30px;
     padding-right: 20px;
+}
+#mc_embed_signup input.email{
+	color: white!important;
 }
 
 /*Footer*/
@@ -904,6 +933,18 @@ color: black!important;
 .social-share-block{
 	display: -webkit-inline-box;
 }
+.container-blog-col1 .wp-caption{
+	width: 100%!important;
+	img{
+		width: 100%!important;
+		height: auto!important;
+	}
+}
+.container-blog-col1 img{
+	width: 100%!important;
+	height: auto!important;
+}
+
 /*Blog Sidebar*/
 #primary-sidebar .mejs-controls{
 	display: none!important;
@@ -981,13 +1022,16 @@ div.panel {
 }
 
 
-#subservicio .col{
+#subservicio .blocks-subservicios-area .col{
 	min-height: 400px;
 }
 .subservicio-block{
     height: 300px;
     background-size: cover;
     position: relative;
+}
+.subservicio-block:hover{
+	opacity: 0.8;
 }
 .sub-paquetes{
 	margin-bottom: 20px;
@@ -1017,6 +1061,44 @@ div.panel {
 }
 .subservicio-block + p{
 	font-size: 14px;
+}
+
+#subservicio.cobertura-de-eventos,
+#subservicio.identidad-corporativa,
+#subservicio.desarrollo-de-contenidos-digitales{
+	.temporaly-hidden{
+		display: none;
+	}
+} 
+
+#subservicio.comunicacion-de-marca{
+	.temporaly-hidden-only-cmarca{
+		display: none;
+	}
+}
+
+#subservicio #formulario-contacto{
+	input{
+		padding: 5px;
+		background-color: rgba(151, 151, 151, 0);
+	}
+	textarea{
+		background-color: rgba(151, 151, 151, 0);
+	}
+	label{
+		font-size: 14px;
+	}
+	input[type=button]{
+		min-width: 150px;
+    	margin: auto;
+    	letter-spacing: 1.5px;
+    	color: #fff;
+    	background-color: #0BA6B5;
+    	text-transform: uppercase;
+    	border-radius: 2px;
+    	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    	padding: 8px;
+	}
 }
 
 
@@ -2211,7 +2293,7 @@ div.panel {
 	position: relative;
 	text-align: center;
 	video {
-		max-height: 100vh;
+		/*max-height: 100vh;*/
 		max-width: 100%;
 	}
 	#portada-video {
@@ -2231,3 +2313,52 @@ div.panel {
 	}	
 }
 
+//Servicios
+#item-servicios {
+	position: fixed;
+    left: 5px;
+    z-index: 99;
+    @media (min-width: 901px){ left: 15px; }
+    .black {
+		position: relative;
+		z-index: 9;
+		& + ul {
+			position: absolute;
+		    top: 1px;
+		    left: 4px;
+		    z-index: -1;
+		    display: none;
+		    ul#sub-servicios {
+		    	position: absolute;
+			    top: 50px;
+			    left: 50px;
+			    li {
+					width: 255px;
+				    .sub-servicio-items {
+				    	position: absolute;
+					    top: 0px;
+					    right: -300px;
+					    width: 300px;
+						display: none;
+				    }								    	
+			    }
+
+			    li {
+					background-color: #000;
+					a { 
+						line-height: 40px; 
+						white-space: nowrap; 
+						overflow: hidden;
+						text-overflow: ellipsis;
+					}					
+			    }
+			    & > li:hover > a, a:hover { color: #0BA6B5!important; }
+		    }
+		}
+    }
+    &:hover .black + ul,
+    #sub-servicios li:hover a + .sub-servicio-items { 
+    	display: block!important;
+    	//&:hover ul#sub-servicios { display: block; }
+    }
+}
