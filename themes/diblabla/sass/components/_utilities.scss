@@ -280,6 +280,12 @@ a.menu-servicios-drop{
 #dropdown2 a{
 	font-size: 12px;
 	padding-left: 40px;
+	&.sub-item {
+		padding-left: 40px;
+	    white-space: nowrap;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	}
 }
 .btn-close-nav{
 	text-align: right;
@@ -2333,7 +2339,7 @@ div.panel {
 			    top: 50px;
 			    left: 50px;
 			    li {
-					width: 255px;
+					width: 265px;
 				    .sub-servicio-items {
 				    	position: absolute;
 					    top: 0px;
