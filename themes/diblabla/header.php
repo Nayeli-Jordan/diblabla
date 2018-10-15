@@ -84,25 +84,25 @@
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));</script>
       <header>
-      	 <nav>
+         <nav>
            
 
-		    <div class="fixed-action-btn  ico-menu-1 horizontal">
-			    <a href="<?php echo site_url(''); ?>" class="btn-floating btn-large black">
+        <div class="fixed-action-btn  ico-menu-1 horizontal">
+          <a href="<?php echo site_url(''); ?>" class="btn-floating btn-large black">
                         <div class="photo-menu-icon ico-1"></div>
-			    </a>
-			    <ul>
-			      <li><a href="<?php echo site_url(''); ?>" class="btn-floating black">Inicio</a></li>
-			    </ul>
-			</div>
-			<div class="fixed-action-btn  ico-menu-2 horizontal">
-			    <a href="<?php echo site_url('/nosotros'); ?>" class="btn-floating btn-large black">
-			      <div class="photo-menu-icon ico-2"></div>
-			    </a>
-			    <ul>
-			      <li><a href="<?php echo site_url('/nosotros'); ?>" class="btn-floating black">Nosotros</a></li>
-			    </ul>
-			</div>
+          </a>
+          <ul>
+            <li><a href="<?php echo site_url(''); ?>" class="btn-floating black">Inicio</a></li>
+          </ul>
+      </div>
+      <div class="fixed-action-btn  ico-menu-2 horizontal">
+          <a href="<?php echo site_url('/nosotros'); ?>" class="btn-floating btn-large black">
+            <div class="photo-menu-icon ico-2"></div>
+          </a>
+          <ul>
+            <li><a href="<?php echo site_url('/nosotros'); ?>" class="btn-floating black">Nosotros</a></li>
+          </ul>
+      </div>
 
       <div id="item-servicios" class="ico-menu-3 horizontal">
           <a href="<?php echo site_url('/servicios'); ?>" class="btn-floating btn-large black">
@@ -153,15 +153,15 @@
             </ul>
           </ul>
       </div>
-			<div class="fixed-action-btn  ico-menu-4 horizontal">
-			    <a href="<?php echo site_url('/proyectos'); ?>" class="btn-floating btn-large black">
-			      <div class="photo-menu-icon ico-4"></div>
-			    </a>
-			    <ul>
-			      <li><a href="<?php echo site_url('/proyectos'); ?>" class="btn-floating black">Proyectos</a></li>
-			    </ul>
-			</div>
-			<div class="fixed-action-btn  ico-menu-5 horizontal">
+      <div class="fixed-action-btn  ico-menu-4 horizontal">
+          <a href="<?php echo site_url('/proyectos'); ?>" class="btn-floating btn-large black">
+            <div class="photo-menu-icon ico-4"></div>
+          </a>
+          <ul>
+            <li><a href="<?php echo site_url('/proyectos'); ?>" class="btn-floating black">Proyectos</a></li>
+          </ul>
+      </div>
+      <div class="fixed-action-btn  ico-menu-5 horizontal">
              <a href="<?php echo site_url('/cotiza'); ?>" class="btn-floating btn-large black">
                <div class="photo-menu-icon ico-5"></div>
              </a>
@@ -170,14 +170,21 @@
              </ul>
          </div>
          <div class="fixed-action-btn  ico-menu-6 horizontal">
-			    <a href="<?php echo site_url('#contacto-2'); ?>" class="btn-floating btn-large black">
-			      <div class="photo-menu-icon ico-6"></div>
-			    </a>
-			    <ul>
-			      <li><a href="<?php echo site_url('#contacto-2'); ?>" class="btn-floating black">Contacto</a></li>
-			    </ul>
-			</div>
-        
+          <a href="<?php echo site_url('#contacto-2'); ?>" class="btn-floating btn-large black">
+            <div class="photo-menu-icon ico-6"></div>
+          </a>
+          <ul>
+            <li><a href="<?php echo site_url('#contacto-2'); ?>" class="btn-floating black">Contacto</a></li>
+          </ul>
+      </div>
+        <div class="fixed-action-btn  ico-menu-7 horizontal">
+             <a href="<?php echo site_url('/blog'); ?>" class="btn-floating btn-large black">
+               <div class="photo-menu-icon ico-7"></div>
+             </a>
+             <ul>
+               <li><a href="<?php echo site_url('/blog'); ?>" class="btn-floating black">Blog</a></li>
+             </ul>
+         </div>
         </nav>
 
         <!--Menu responsive view-->
@@ -225,7 +232,7 @@
           <li><a class="waves-effect" href="<?php echo site_url('/proyectos'); ?>">Proyectos</a></li>
           <li><a class="waves-effect" href="<?php echo site_url('/cotiza'); ?>">Crea tu proyecto</a></li>
           <li><a class="waves-effect" href="<?php echo site_url('#contacto-2'); ?>">Contacto</a></li>
-          <!-- <li><a class="waves-effect" href="<?php echo site_url('/blog-diblabla'); ?>">Blog</a></li> -->
+          <li><a class="waves-effect" href="<?php echo site_url('/blog-diblabla'); ?>">Blog</a></li>
         </ul>
       </header>
       <div class="[ main-body ]">
