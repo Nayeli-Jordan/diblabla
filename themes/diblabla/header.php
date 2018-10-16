@@ -84,25 +84,25 @@
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));</script>
       <header>
-         <nav>
+      	 <nav>
            
 
-        <div class="fixed-action-btn  ico-menu-1 horizontal">
-          <a href="<?php echo site_url(''); ?>" class="btn-floating btn-large black">
+		    <div class="fixed-action-btn  ico-menu-1 horizontal">
+			    <a href="<?php echo site_url(''); ?>" class="btn-floating btn-large black">
                         <div class="photo-menu-icon ico-1"></div>
-          </a>
-          <ul>
-            <li><a href="<?php echo site_url(''); ?>" class="btn-floating black">Inicio</a></li>
-          </ul>
-      </div>
-      <div class="fixed-action-btn  ico-menu-2 horizontal">
-          <a href="<?php echo site_url('/nosotros'); ?>" class="btn-floating btn-large black">
-            <div class="photo-menu-icon ico-2"></div>
-          </a>
-          <ul>
-            <li><a href="<?php echo site_url('/nosotros'); ?>" class="btn-floating black">Nosotros</a></li>
-          </ul>
-      </div>
+			    </a>
+			    <ul>
+			      <li><a href="<?php echo site_url(''); ?>" class="btn-floating black">Inicio</a></li>
+			    </ul>
+			</div>
+			<div class="fixed-action-btn  ico-menu-2 horizontal">
+			    <a href="<?php echo site_url('/nosotros'); ?>" class="btn-floating btn-large black">
+			      <div class="photo-menu-icon ico-2"></div>
+			    </a>
+			    <ul>
+			      <li><a href="<?php echo site_url('/nosotros'); ?>" class="btn-floating black">Nosotros</a></li>
+			    </ul>
+			</div>
 
       <div id="item-servicios" class="ico-menu-3 horizontal">
           <a href="<?php echo site_url('/servicios'); ?>" class="btn-floating btn-large black">
@@ -153,15 +153,15 @@
             </ul>
           </ul>
       </div>
-      <div class="fixed-action-btn  ico-menu-4 horizontal">
-          <a href="<?php echo site_url('/proyectos'); ?>" class="btn-floating btn-large black">
-            <div class="photo-menu-icon ico-4"></div>
-          </a>
-          <ul>
-            <li><a href="<?php echo site_url('/proyectos'); ?>" class="btn-floating black">Proyectos</a></li>
-          </ul>
-      </div>
-      <div class="fixed-action-btn  ico-menu-5 horizontal">
+			<div class="fixed-action-btn  ico-menu-4 horizontal">
+			    <a href="<?php echo site_url('/proyectos'); ?>" class="btn-floating btn-large black">
+			      <div class="photo-menu-icon ico-4"></div>
+			    </a>
+			    <ul>
+			      <li><a href="<?php echo site_url('/proyectos'); ?>" class="btn-floating black">Proyectos</a></li>
+			    </ul>
+			</div>
+			<div class="fixed-action-btn  ico-menu-5 horizontal">
              <a href="<?php echo site_url('/cotiza'); ?>" class="btn-floating btn-large black">
                <div class="photo-menu-icon ico-5"></div>
              </a>
@@ -170,13 +170,13 @@
              </ul>
          </div>
          <div class="fixed-action-btn  ico-menu-6 horizontal">
-          <a href="<?php echo site_url('#contacto-2'); ?>" class="btn-floating btn-large black">
-            <div class="photo-menu-icon ico-6"></div>
-          </a>
-          <ul>
-            <li><a href="<?php echo site_url('#contacto-2'); ?>" class="btn-floating black">Contacto</a></li>
-          </ul>
-      </div>
+			    <a href="<?php echo site_url('#contacto-2'); ?>" class="btn-floating btn-large black">
+			      <div class="photo-menu-icon ico-6"></div>
+			    </a>
+			    <ul>
+			      <li><a href="<?php echo site_url('#contacto-2'); ?>" class="btn-floating black">Contacto</a></li>
+			    </ul>
+			</div>
         <div class="fixed-action-btn  ico-menu-7 horizontal">
              <a href="<?php echo site_url('/blog'); ?>" class="btn-floating btn-large black">
                <div class="photo-menu-icon ico-7"></div>
@@ -198,36 +198,10 @@
           <li><a class="waves-effect" href="<?php echo site_url('/nosotros'); ?>">Nosotros</a></li>
           <li><a class="waves-effect" href="<?php echo site_url('/servicios'); ?>">Servicios</a></li>
             <ul id="dropdown2">
-              <li>
-                <a href="<?php echo site_url('/nuestros-servicios/cobertura-de-eventos'); ?>">Cobertura de eventos</a>
-                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/cobertura-de-eventos'); ?>#eventos-empresariales">Eventos empresariales</a>
-                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/cobertura-de-eventos'); ?>#eventos-culturales">Eventos culturales</a>
-              <li>
-                <a href="<?php echo site_url('/nuestros-servicios/identidad-corporativa'); ?>">Identidad corporativa</a>
-                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/identidad-corporativa'); ?>#credencializacion">Credencialización</a>
-                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/identidad-corporativa'); ?>#fotografia-y-video-de-instalaciones">Fotografía y video de instalaciones</a>
-                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/identidad-corporativa'); ?>#logotipo-y-manual-de-identidad">Logotipo y manual de identidad</a>
-                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/identidad-corporativa'); ?>#papeleria-institucional">Papelería institucional</a>
-                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/identidad-corporativa'); ?>#video-de-capacitacion">Video de capacitación</a>
-                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/identidad-corporativa'); ?>#video-institucional">Video institucional</a>
-              </li>
-              <li>
-                <a href="<?php echo site_url('/nuestros-servicios/desarrollo-de-contenidos-digitales'); ?>">Desarrollo de contenidos digitales</a>
-                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/desarrollo-de-contenidos-digitales'); ?>#fotografia-de-producto">Fotografía de producto</a>
-                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/desarrollo-de-contenidos-digitales'); ?>#making-of-publicitario">Making of publicitario</a>
-                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/desarrollo-de-contenidos-digitales'); ?>#spots-publicitarios">Spots publicitarios</a>
-                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/desarrollo-de-contenidos-digitales'); ?>#video-catalogos">Video catálogos</a>
-                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/desarrollo-de-contenidos-digitales'); ?>#video-infografias">Video infografías</a>
-              </li>
-              <li>
-                <a href="<?php echo site_url('/nuestros-servicios/comunicacion-de-marca'); ?>">Comunicación de marca</a>
-                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/comunicacion-de-marca'); ?>#asesoria-y-capacitacion-para-manejo-de-rrss">Asesoría y capacitación para manejo de RRSS</a>
-                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/comunicacion-de-marca'); ?>#campanas-de-marketing-digital">Campañas de marketing digital</a>
-                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/comunicacion-de-marca'); ?>#campanas-de-publicidad-btl">Campañas de publicidad BTL</a>
-                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/comunicacion-de-marca'); ?>#creacion-de-paginas-web">Creación de páginas web</a>
-                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/comunicacion-de-marca'); ?>#manejo-de-rrss">Manejo de RRSS</a>
-                <a class="sub-item" href="<?php echo site_url('/nuestros-servicios/comunicacion-de-marca'); ?>#optimiza-tu-inversion">Optimiza tu inversión</a>
-              </li>
+              <li><a href="<?php echo site_url('/nuestros-servicios/cobertura-de-eventos'); ?>">Cobertura de eventos</a></li>
+              <li><a href="<?php echo site_url('/nuestros-servicios/identidad-corporativa'); ?>">Identidad corporativa</a></li>
+              <li><a href="<?php echo site_url('/nuestros-servicios/desarrollo-de-contenidos-digitales'); ?>">Desarrollo de contenidos digitales</a></li>
+              <li><a href="<?php echo site_url('/nuestros-servicios/comunicacion-de-marca'); ?>">Comunicación de marca</a></li>
             </ul>
           <li><a class="waves-effect" href="<?php echo site_url('/proyectos'); ?>">Proyectos</a></li>
           <li><a class="waves-effect" href="<?php echo site_url('/cotiza'); ?>">Crea tu proyecto</a></li>
